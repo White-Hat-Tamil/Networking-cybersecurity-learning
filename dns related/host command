@@ -1,3 +1,11 @@
+Index:
+------
+1) DNS lookup
+2) A record lookup
+3) AAAA record lookup
+4) Name server lookup
+5) Zone transfer
+
 Host command: (DNS lookup utility)
 1)
 Displays IPv4, IPv6, mail server, ...
@@ -26,4 +34,36 @@ Returns only AAAA records (Mapped IPv6 address)
 Output:
 google.com has IPv6 address 2404:6800:4007:80d::200e
 
+---
 -t => (PTR, MX, NS)
+---
+4)
+NS - Name servers can transfer dns records to another name servers
+Returns name server records:
+#host -t NS google.com
+
+Output:
+google.com name server ns1.google.com.
+google.com name server ns4.google.com.
+google.com name server ns3.google.com.
+google.com name server ns2.google.com.
+
+5)
+Zone transfer: [host -l or dig axfr]
+#host -l google.com ns1.google.com
+
+Output:
+Using domain server:
+Name: ns1.google.com
+Address: 216.239.32.10#53
+Aliases: 
+; Transfer failed.
+
+#host zonetransfer.me
+#host -t ns zonetransfer.me
+zonetransfer.me name server nsztm1.digi.ninja
+zonetransfer.me name server nsztm2.digi.ninja
+
+#host -l zonetransfer.me nsztm1.digi.ninja
+<Displays IP of webserver, mailserver, subdomains, internal hostnames>
+It attempts to download the entire DNS zone file for zonetransfer.me from the nameserver nsztm1.digi.ninja
