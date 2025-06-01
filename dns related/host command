@@ -21,7 +21,9 @@ google.com has address 142.250.206.46
 
 3)
 Returns only AAAA records (Mapped IPv6 address)
-#host -t A google.com
+#host -t AAAA google.com
 
 Output:
 google.com has IPv6 address 2404:6800:4007:80d::200e
+
+-t => (PTR, MX, NS)
