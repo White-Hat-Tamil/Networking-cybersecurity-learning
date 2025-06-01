@@ -13,3 +13,4 @@ Returns only A records
 #host -t A google.com
 
 Output:
+google.com has address 142.250.206.46
