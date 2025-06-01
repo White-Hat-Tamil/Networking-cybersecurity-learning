@@ -1,10 +1,9 @@
-Host command: (DNS lookup utility) <br>
+Host command: (DNS lookup utility)
 Displays IPv4, IPv6, mail server, ...
-<br>
->host google.com
-<br>
-Output: <br>
-google.com has address 142.250.67.46 <br>
-google.com has IPv6 address 2404:6800:4007:81b::200e <br>
-google.com mail is handled by 10 smtp.google.com. <br>
-google.com has HTTP service bindings 1 . alpn="h2,h3" <br>
+# host google.com
+
+Output:
+google.com has address 142.250.67.46
+google.com has IPv6 address 2404:6800:4007:81b::200e
+google.com mail is handled by 10 smtp.google.com.
+google.com has HTTP service bindings 1 . alpn="h2,h3"
