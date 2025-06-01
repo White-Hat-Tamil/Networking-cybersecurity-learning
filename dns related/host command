@@ -1,4 +1,5 @@
 Host command: (DNS lookup utility)
+1)
 Displays IPv4, IPv6, mail server, ...
 # host google.com
 
@@ -9,6 +10,7 @@ google.com mail is handled by 10 smtp.google.com.
 google.com has HTTP service bindings 1 . alpn="h2,h3"
 
 --
+2)
 Returns only A records
 #host -t A google.com
 
@@ -17,6 +19,7 @@ google.com has address 142.250.206.46
 
 ---
 
+3)
 Returns only AAAA records (Mapped IPv6 address)
 #host -t A google.com
 
