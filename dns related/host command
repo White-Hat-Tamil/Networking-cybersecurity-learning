@@ -7,7 +7,9 @@ Index:
 5) Zone transfer
 
 Host command: (DNS lookup utility)
-1)
+----------------------------------
+1) DNS lookup:
+---------------
 Displays IPv4, IPv6, mail server, ...
 # host google.com
 
@@ -18,7 +20,8 @@ google.com mail is handled by 10 smtp.google.com.
 google.com has HTTP service bindings 1 . alpn="h2,h3"
 
 --
-2)
+2) Record A lookup:
+-------------------
 Returns only A records
 #host -t A google.com
 
@@ -27,7 +30,8 @@ google.com has address 142.250.206.46
 
 ---
 
-3)
+3) Record AAAA lookup:
+----------------------
 Returns only AAAA records (Mapped IPv6 address)
 #host -t AAAA google.com
 
@@ -37,7 +41,9 @@ google.com has IPv6 address 2404:6800:4007:80d::200e
 ---
 -t => (PTR, MX, NS)
 ---
-4)
+
+4) Name server lookup:
+----------------------
 NS - Name servers can transfer dns records to another name servers
 Returns name server records:
 #host -t NS google.com
@@ -48,7 +54,8 @@ google.com name server ns4.google.com.
 google.com name server ns3.google.com.
 google.com name server ns2.google.com.
 
-5)
+5) Zone transfer:
+-----------------
 Zone transfer: [host -l or dig axfr]
 #host -l google.com ns1.google.com
 
