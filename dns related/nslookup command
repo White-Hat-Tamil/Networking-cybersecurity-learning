@@ -4,3 +4,5 @@ Nslookup command: (DNS lookup)
 #nslookup google.com
 
 #nslookup -query=mx google.com
+
+#nslookup -query=ns google.com
