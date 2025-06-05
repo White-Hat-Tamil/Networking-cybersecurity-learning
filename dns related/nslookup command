@@ -1,2 +1,4 @@
 Nslookup command: (DNS lookup)
 -----------------
+
+#nslookup google.com
