@@ -1,6 +1,6 @@
 # This repository is for all the learning stuff of mine
-
-1.Host command
-2.nslookup command
-3.dig command
-4.dnsrecon command
+<br>
+1.Host command <br>
+2.nslookup command <br>
+3.dig command <br>
+4.dnsrecon command <br>
