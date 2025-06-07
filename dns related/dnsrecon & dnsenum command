@@ -1,0 +1,29 @@
+DNS Recon:
+----------
+
+#dnsrecon -h
+
+#dnsrecon -d google.com
+we get all the records
+
+----------------------------------------
+
+DNS Enum:
+---------
+
+#dnsenum -h
+
+#dnsenum google.com
+it will give:
+host address
+name server
+mail server
+trying zone transfers
+bruteforce with the wordlist file /usr/share/dnsenum/dns.txt to find subdomain enumeration
+find class C netranges
+perform reverse lookup for the founded class C IPs
+
+
+#dnsenum -f <filename>
+to find subdomains with ip with the manual wordlist file
+

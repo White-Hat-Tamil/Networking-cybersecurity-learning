@@ -1,6 +1,0 @@
-DNS Recon:
-----------
-
-#dnsrecon -h
-
-#dnsrecon -d google.com
