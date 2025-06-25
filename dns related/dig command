@@ -1,6 +1,10 @@
 Dig command: (DNS lookup) - For more structured output
 -------------------------
 
+1.DNS zone transfer
+2.DNS tracer route
+
+1)
 #dig -h (for help)
 
 #dig google.com
@@ -32,3 +36,7 @@ zonetransfer.me.        7092    IN      NS      nsztm2.digi.ninja.
 
 
 #dig axfr @nsztm1.digi.ninja zonetransfer.me
+
+
+
+2) #dig +trace scanme.nmap.org
